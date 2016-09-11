@@ -1,14 +1,21 @@
 @charset "UTF-8";
 /* CSS Document */
-
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 header {
 	text-align: center;
-	background-color: #000;
+	background-color: #129B4D;
 	color: #FFF;
 }
 body {
-	font-family: Verdana, sans-serif;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
 	font-size: 16px;
+	margin: 0;
 }
 h1,
 header p {
@@ -16,7 +23,7 @@ header p {
 }
 h1 {
 	padding-top: 10px;
-	font-size: 32px;
+	font-size: 52px;
 }
 h2 {
 	font-size: 22px;
@@ -27,6 +34,13 @@ header p {
 }
 .center {
 	margin: auto;
-	width: 50%;
+	width: 70%;
 	text-align: center;
+}
+div {
+	border: 5px solid #F6EC2B;
+	margin-top: 10px;
+	float: left;
+	height: 250px;
+	width: 50%;
 }
