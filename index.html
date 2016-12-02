@@ -1,48 +1,67 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Flash Cards</title>
-<link type="text/css" rel="stylesheet" href="style.css">
+<title>Flash Cards Enhanced</title>
+
+ <link rel="stylesheet" href="colorbox/example3/colorbox.css">
+ <link type="text/css" rel="stylesheet" href="style.css">
 </head>
 <body>
 <header> 
 	<h1>Capital Flash Cards</h1>
-    <p> Roll Over Image to See the State Capital</p>
+    <p> Click on the image of the state to reveal the states' capital</p>
 </header>
 
-<section class="center">
+<section class="flashcards">
 	<div>
-    <h2>Alabama</h2>
-	<img onmouseover="alert('Montgomery');" src="images/alabama.jpeg" alt="Picture of Alabama">
+		<a href="images/alabama.jpeg">
+	        <h2>Alabama</h2>
+	        <img src="images/alabama.jpeg" alt="Picture of Alabama">
+            <p class="state_capital"><span class="flashcard_description">State Capital:</span> Montgomery</p>
+		</a>
 	</div>
-    
     <div>
-	<h2>Alaska</h2>
-	<img onmouseover="alert('Juneau');" src="images/alaska.jpeg" alt="Picture of Alaska">
+    	<a href="images/alaska.jpeg">
+    		<h2>Alaska</h2>
+	    	<img src="images/alaska.jpeg" alt="Picture of Alaska">
+        	<p class="state_capital"><span class="flashcard_description">State Capital:</span> Juneau</p>
+    	</a>
     </div>
-
 	<div>
-	<h2>Arizona</h2>
-    <img onmouseover="alert('Phoenix');" src="images/arizona.jpeg" alt="Picture of Arizona">
+		<a href="images/arizona.jpeg">
+		   <h2>Arizona</h2>
+      	   <img src="images/arizona.jpeg" alt="Picture of Arizona">
+      	   <p class="state_capital"><span class="flashcard_description">State Capital:</span> Phoenix</p>
+		</a>
     </div>
-    
     <div>
-    <h2>Arkansas</h2>
-    <img onmouseover="alert('Little Rock');" src="images/arkansas.jpeg" alt="Picture of Arkansas">
+    	<a href="images/arkansas.jpeg">
+    		<h2>Arkansas</h2>
+        	<img src="images/arkansas.jpeg" alt="Picture of Arkansas">
+        	<p class="state_capital"><span class="flashcard_description">State Capital:</span> Little Rock</p>
+        </a> 
     </div>
-    
     <div>
-    <h2>California</h2>
-    <img onmouseover="alert('Sacramento');" src="images/california.jpeg" alt="Picture of California">
+        <a href="images/california.jpeg">
+       		<h2>California</h2>
+       		<img src="images/california.jpeg" alt="Picture of California">
+        	<p class="state_capital"><span class="flashcard_description">State Capital:</span> Sacramento</p>
+        </a>
     </div>
-    
     <div>
-    <h2>Colorado</h2>
-    <img onmouseover="alert('Denver');" src="images/colorado.jpg" alt="Picture of Colorado">
+    	<a href="images/colorado.jpg">
+    		 <h2>Colorado</h2>
+        	<img src="images/colorado.jpg" alt="Picture of Colorado">
+        	<p class="state_capital"><span class="flashcard_description">State Capital:</span> Denver</p>
+    	</a>
+       
     </div>
-    
 </section>
+
+<script src="jquery-3.1.1.js"></script>
+<script src="script.js"></script>
+<script src="colorbox/jquery.colorbox-min.js"></script>
 
 </body>
 </html>
